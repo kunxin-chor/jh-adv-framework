@@ -4,15 +4,24 @@ const express = require('express');
 const router = express.Router();
 
 router.get('/', function(req,res){
-    res.render('landing/index');
+
+    res.render('landing/index',{
+       
+    });
 })
 
 router.get('/about', function(req,res){
-    res.render('landing/about')
+
+    res.render('landing/about',{
+   
+    })
 })
 
 router.get('/contact-us', function(req,res){
-    res.send("Contact us");
+
+    res.render('landing/contact-us',{
+    
+    });
 })
 
 // export out the router object
